@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8d1111">
+  <title>Corneta • Treinamento</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark">🎺</div>
+    <div><strong>CORNETA</strong><span>Treinamento</span></div>
+  </div>
+  <button id="themeBtn" class="icon-btn" aria-label="Alternar tema">☾</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">CFO • CBM</span>
+      <h1>Treine os <em>toques</em> de corneta.</h1>
+      <p>Escolha um toque, ou deixe o sistema sortear para simular a prova. Treine reconhecimento, memória e resposta.</p>
+      <div class="hero-actions">
+        <button id="randomHero" class="primary">▶ Treino aleatório</button>
+        <button id="stopAll" class="secondary">■ Parar</button>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="cornetista-art" aria-label="Ilustração de corneteiro">
+        <div class="sun"></div><div class="head"></div><div class="cap"></div>
+        <div class="body"></div><div class="arm"></div><div class="horn"></div>
+      </div>
+      <div class="hero-caption"><span>🎺</span> Modo de treinamento</div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div><b id="played">0</b><span>toques treinados</span></div>
+    <div><b id="correct">0</b><span>acertos</span></div>
+    <div><b id="streak">0</b><span>sequência</span></div>
+  </section>
+
+  <section class="section-head">
+    <div>
+      <span class="eyebrow">Biblioteca</span>
+      <h2>Escolha um toque</h2>
+    </div>
+    <input id="search" type="search" placeholder="🔎 Buscar toque...">
+  </section>
+
+  <section id="calls" class="call-grid"></section>
+
+  <section class="trainer">
+    <div class="section-head compact">
+      <div><span class="eyebrow">Simulado</span><h2>Modo prova</h2></div>
+      <label class="switch-row"><input id="revealToggle" type="checkbox"><span>Mostrar resposta</span></label>
+    </div>
+    <div class="quiz">
+      <div class="quiz-icon">🎺</div>
+      <div class="quiz-body">
+        <span id="quizStatus">Pronto para treinar</span>
+        <h3 id="quizTitle">Clique em “Novo toque” e tente reconhecer pelo áudio.</h3>
+        <div class="quiz-actions">
+          <button id="newQuiz" class="primary">▶ Novo toque</button>
+          <button id="answerBtn" class="secondary">Mostrar resposta</button>
+        </div>
+        <div id="answer" class="answer"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tips">
+    <span class="eyebrow">Bizus</span>
+    <h2>Como estudar</h2>
+    <div class="tips-grid">
+      <article><b>01</b><h3>Reconheça pelo início</h3><p>Ouça os primeiros segundos sem olhar o nome. Tente identificar o padrão antes da resposta.</p></article>
+      <article><b>02</b><h3>Use o modo aleatório</h3><p>Faça séries de 10 a 20 toques para aproximar o treino da pressão de uma avaliação.</p></article>
+      <article><b>03</b><h3>Revise os erros</h3><p>Marque mentalmente os toques que confundiu e repita somente esses até ganhar segurança.</p></article>
+    </div>
+  </section>
+
+  <section class="audio-help">
+    <h2>Coloque seus áudios</h2>
+    <p>O site já está preparado para os arquivos reais de cada toque. Salve os MP3 na pasta <code>assets/audio</code> usando os nomes indicados abaixo.</p>
+    <div id="fileNames" class="file-list"></div>
+  </section>
+</main>
+
+<footer>Projeto estático para GitHub Pages • CFO / CBM</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
