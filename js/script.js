@@ -378,3 +378,55 @@ if (fileNames) {
 
 render();
 updateStats();
+
+
+// ==============================
+// INSTALAÇÃO DO APLICATIVO (PWA)
+// ==============================
+
+let deferredInstallPrompt = null;
+const installButton = $("#installBtn");
+
+window.addEventListener("beforeinstallprompt", event => {
+  event.preventDefault();
+  deferredInstallPrompt = event;
+
+  if (installButton) {
+    installButton.hidden = false;
+  }
+});
+
+if (installButton) {
+  installButton.onclick = async () => {
+    if (!deferredInstallPrompt) return;
+
+    deferredInstallPrompt.prompt();
+
+    const result = await deferredInstallPrompt.userChoice;
+    console.log("Resultado da instalação:", result.outcome);
+
+    deferredInstallPrompt = null;
+    installButton.hidden = true;
+  };
+}
+
+window.addEventListener("appinstalled", () => {
+  console.log("Aplicativo instalado.");
+
+  if (installButton) {
+    installButton.hidden = true;
+  }
+});
+
+// ==============================
+// SERVICE WORKER / PWA
+// ==============================
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("./service-worker.js")
+      .then(() => console.log("Service Worker registrado com sucesso."))
+      .catch(error => console.error("Erro ao registrar o Service Worker:", error));
+  });
+}
