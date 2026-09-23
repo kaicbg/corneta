@@ -38,7 +38,7 @@ const calls = [
   ["32 - Término de expediente", "termino-expediente.mp3", "termino-expediente.mp4", "Toque de rotina"],
   ["33 - Avançar ao rancho", "avancar-ao-rancho.mp3", "avancar-ao-rancho.mp4", "Toque de rotina"],
   ["34 - Oficial general", "oficial-general.mp3", "oficial-general.mp4", "Honras militares"],
-  ["35 - Toque do 20º BIB", "toque-20-bib.mp3", "toque-20-bib.mp4", "Toque tradicional"]
+
 ];
 
 const $ = s => document.querySelector(s);
