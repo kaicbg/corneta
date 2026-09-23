@@ -1,44 +1,43 @@
 const calls = [
-  ["00 - Atenção", "atencao.mp3", "atencao.mp4", "Toque de comando"],
+  ["00 - Atenção", "atencao.mp3", "turma.png", "Toque de comando"],
 
-  ["01 - Sentido", "sentido.mp3", "sentido.mp4", "Toque de formação"],
-  ["02 - Ombro arma", "ombro-arma.mp3", "ombro-arma.mp4", "Comando de arma"],
-  ["03 - Apresentar arma", "apresentar-arma.mp3", "apresentar-arma.mp4", "Comando de arma"],
-  ["04 - Descansar arma", "descansar-arma.mp3", "descansar-arma.mp4", "Comando de arma"],
-  ["05 - Descansar", "descansar.mp3", "descansar.mp4", "Toque de formação"],
-  ["06 - Cruzar arma", "cruzar-arma.mp3", "cruzar-arma.mp4", "Comando de arma"],
-  ["07 - Armar baioneta", "armar-baioneta.mp3", "armar-baioneta.mp4", "Comando de arma"],
-  ["08 - Desarmar baioneta", "desarmar-baioneta.mp3", "desarmar-baioneta.mp4", "Comando de arma"],
+  ["01 - Sentido", "sentido.mp3", "turma.png", "Toque de formação"],
+  ["02 - Ombro arma", "ombro-arma.mp3", "turma.png", "Comando de arma"],
+  ["03 - Apresentar arma", "apresentar-arma.mp3", "turma.png", "Comando de arma"],
+  ["04 - Descansar arma", "descansar-arma.mp3", "turma.png", "Comando de arma"],
+  ["05 - Descansar", "descansar.mp3", "turma.png", "Toque de formação"],
+  ["06 - Cruzar arma", "cruzar-arma.mp3", "turma.png", "Comando de arma"],
+  ["07 - Armar baioneta", "armar-baioneta.mp3", "turma.png", "Comando de arma"],
+  ["08 - Desarmar baioneta", "desarmar-baioneta.mp3", "turma.png", "Comando de arma"],
 
-  ["09 - Esquerda volver", "esquerda-volver.mp3", "esquerda-volver.mp4", "Comando de formação"],
-  ["10 - Direita volver", "direita-volver.mp3", "direita-volver.mp4", "Comando de formação"],
-  ["11 - Meia volta volver", "meia-volta-volver.mp3", "meia-volta-volver.mp4", "Comando de formação"],
-  ["12 - Voltas volver", "voltas-volver.mp3", "voltas-volver.mp4", "Comando de formação"],
+  ["09 - Esquerda volver", "esquerda-volver.mp3", "turma.png", "Comando de formação"],
+  ["10 - Direita volver", "direita-volver.mp3", "turma.png", "Comando de formação"],
+  ["11 - Meia volta volver", "meia-volta-volver.mp3", "turma.png", "Comando de formação"],
+  ["12 - Voltas volver", "voltas-volver.mp3", "turma.png", "Comando de formação"],
 
-  ["13 - Oficial superior", "oficial-superior.mp3", "oficial-superior.mp4", "Honras militares"],
-  ["14 - Oficiais", "oficiais.mp3", "oficiais.mp4", "Honras militares"],
-  ["15 - Subtenente", "subtenente.mp3", "subtenente.mp4", "Honras militares"],
-  ["16 - Sargento", "sargento.mp3", "sargento.mp4", "Honras militares"],
-  ["17 - Sargenteante", "sargenteante.mp3", "sargenteante.mp4", "Honras militares"],
-  ["18 - CMT Chefe / Diretor", "cmt-chefe-diretor.mp3", "cmt-chefe-diretor.mp4", "Honras militares"],
-  ["19 - Sub Comandante", "sub-comandante.mp3", "sub-comandante.mp4", "Honras militares"],
+  ["13 - Oficial superior", "oficial-superior.mp3", "turma.png", "Honras militares"],
+  ["14 - Oficiais", "oficiais.mp3", "turma.png", "Honras militares"],
+  ["15 - Subtenente", "subtenente.mp3", "turma.png", "Honras militares"],
+  ["16 - Sargento", "sargento.mp3", "turma.png", "Honras militares"],
+  ["17 - Sargenteante", "sargenteante.mp3", "turma.png", "Honras militares"],
+  ["18 - CMT Chefe / Diretor", "cmt-chefe-diretor.mp3", "turma.png", "Honras militares"],
+  ["19 - Sub Comandante", "sub-comandante.mp3", "turma.png", "Honras militares"],
 
-  ["20 - Ordinário marche", "ordinario-marche.mp3", "ordinario-marche.mp4", "Comando de marcha"],
-  ["21 - Acelerado", "acelerado.mp3", "acelerado.mp4", "Comando de marcha"],
-  ["22 - Alvorada", "alvorada.mp3", "alvorada.mp4", "Toque de rotina"],
-  ["23 - Silêncio", "silencio.mp3", "silencio.mp4", "Toque de silêncio"],
-  ["24 - Continência à Bandeira", "continencia-bandeira.mp3", "continencia-bandeira.mp4", "Cerimonial"],
-  ["25 - Cobrir", "cobrir.mp3", "cobrir.mp4", "Comando de formação"],
-  ["26 - Firme", "firme.mp3", "firme.mp4", "Comando de formação"],
-  ["27 - Alto", "alto.mp3", "alto.mp4", "Comando de formação"],
-  ["28 - A vontade", "a-vontade.mp3", "a-vontade.mp4", "Comando de formação"],
-  ["29 - Olhar à direita", "olhar-a-direita.mp3", "olhar-a-direita.mp4", "Comando de formação"],
-  ["30 - Olhar frente", "olhar-frente.mp3", "olhar-frente.mp4", "Comando de formação"],
-  ["31 - Início de expediente", "inicio-expediente.mp3", "inicio-expediente.mp4", "Toque de rotina"],
-  ["32 - Término de expediente", "termino-expediente.mp3", "termino-expediente.mp4", "Toque de rotina"],
-  ["33 - Avançar ao rancho", "avancar-ao-rancho.mp3", "avancar-ao-rancho.mp4", "Toque de rotina"],
-  ["34 - Oficial general", "oficial-general.mp3", "oficial-general.mp4", "Honras militares"],
-
+  ["20 - Ordinário marche", "ordinario-marche.mp3", "turma.png", "Comando de marcha"],
+  ["21 - Acelerado", "acelerado.mp3", "turma.png", "Comando de marcha"],
+  ["22 - Alvorada", "alvorada.mp3", "turma.png", "Toque de rotina"],
+  ["23 - Silêncio", "silencio.mp3", "turma.png", "Toque de silêncio"],
+  ["24 - Continência à Bandeira", "continencia-bandeira.mp3", "turma.png", "Cerimonial"],
+  ["25 - Cobrir", "cobrir.mp3", "turma.png", "Comando de formação"],
+  ["26 - Firme", "firme.mp3", "turma.png", "Comando de formação"],
+  ["27 - Alto", "alto.mp3", "turma.png", "Comando de formação"],
+  ["28 - A vontade", "a-vontade.mp3", "turma.png", "Comando de formação"],
+  ["29 - Olhar à direita", "olhar-a-direita.mp3", "turma.png", "Comando de formação"],
+  ["30 - Olhar frente", "olhar-frente.mp3", "turma.png", "Comando de formação"],
+  ["31 - Início de expediente", "inicio-expediente.mp3", "turma.png", "Toque de rotina"],
+  ["32 - Término de expediente", "termino-expediente.mp3", "turma.png", "Toque de rotina"],
+  ["33 - Avançar ao rancho", "avancar-ao-rancho.mp3", "turma.png", "Toque de rotina"],
+  ["34 - Oficial general", "oficial-general.mp3", "turma.png", "Honras militares"],
 ];
 
 const $ = s => document.querySelector(s);
@@ -57,9 +56,18 @@ let currentAudio = null;
 // ==============================
 
 function updateStats() {
-  $("#played").textContent = played;
-  $("#correct").textContent = correct;
-  $("#streak").textContent = streak;
+
+  if ($("#played")) {
+    $("#played").textContent = played;
+  }
+
+  if ($("#correct")) {
+    $("#correct").textContent = correct;
+  }
+
+  if ($("#streak")) {
+    $("#streak").textContent = streak;
+  }
 
   localStorage.setItem("played", played);
   localStorage.setItem("correct", correct);
@@ -72,11 +80,15 @@ function updateStats() {
 // ==============================
 
 function stopAudio() {
+
   if (currentAudio) {
+
     currentAudio.pause();
     currentAudio.currentTime = 0;
     currentAudio = null;
+
   }
+
 }
 
 
@@ -88,16 +100,21 @@ function playCall(call) {
 
   stopAudio();
 
-  currentAudio = new Audio("assets/audio/" + call[1]);
+  currentAudio = new Audio(
+    "assets/audio/" + call[1]
+  );
 
   currentAudio.play().catch(() => {
+
     alert(
       "Não foi possível encontrar ou reproduzir o arquivo:\n\n" +
       "assets/audio/" + call[1]
     );
+
   });
 
   played++;
+
   updateStats();
 }
 
@@ -114,30 +131,32 @@ function render(filter = "") {
 
   grid.innerHTML = "";
 
-  const search = filter.toLowerCase().trim();
+  const search = filter
+    .toLowerCase()
+    .trim();
 
   calls
-    .filter(c => c[0].toLowerCase().includes(search))
-    .forEach((c, i) => {
+    .filter(c =>
+      c[0]
+        .toLowerCase()
+        .includes(search)
+    )
+    .forEach(c => {
 
-      const card = document.createElement("button");
+      const card =
+        document.createElement("button");
 
       card.className = "call-card";
 
       card.innerHTML = `
+
         <div class="thumb">
 
-          <video
-            muted
-            playsinline
-            preload="metadata"
-            poster="assets/img/corneta-${(i % 4) + 1}.svg"
+          <img
+            src="assets/images/${c[2]}"
+            alt="${c[0]}"
+            loading="lazy"
           >
-            <source
-              src="assets/video/${c[2]}"
-              type="video/mp4"
-            >
-          </video>
 
           <span class="play">▶</span>
 
@@ -152,12 +171,15 @@ function render(filter = "") {
           </p>
 
         </div>
+
       `;
 
       card.onclick = () => playCall(c);
 
       grid.appendChild(card);
+
     });
+
 }
 
 
@@ -169,9 +191,14 @@ const searchInput = $("#search");
 
 if (searchInput) {
 
-  searchInput.addEventListener("input", e => {
-    render(e.target.value);
-  });
+  searchInput.addEventListener(
+    "input",
+    e => {
+
+      render(e.target.value);
+
+    }
+  );
 
 }
 
@@ -185,22 +212,32 @@ function newQuiz() {
   stopAudio();
 
   currentQuiz =
-    calls[Math.floor(Math.random() * calls.length)];
+    calls[
+      Math.floor(
+        Math.random() * calls.length
+      )
+    ];
 
   quizAnswered = false;
 
   if ($("#quizStatus")) {
+
     $("#quizStatus").textContent =
       "Ouça e reconheça";
+
   }
 
   if ($("#quizTitle")) {
+
     $("#quizTitle").textContent =
       "Que toque é este?";
+
   }
 
   if ($("#answer")) {
+
     $("#answer").textContent = "";
+
   }
 
   playCall(currentQuiz);
@@ -214,6 +251,7 @@ function newQuiz() {
       currentQuiz[0];
 
   }
+
 }
 
 
@@ -224,7 +262,10 @@ function newQuiz() {
 const newQuizButton = $("#newQuiz");
 
 if (newQuizButton) {
-  newQuizButton.onclick = newQuiz;
+
+  newQuizButton.onclick =
+    newQuiz;
+
 }
 
 
@@ -235,7 +276,10 @@ if (newQuizButton) {
 const randomHero = $("#randomHero");
 
 if (randomHero) {
-  randomHero.onclick = newQuiz;
+
+  randomHero.onclick =
+    newQuiz;
+
 }
 
 
@@ -251,14 +295,23 @@ if (answerButton) {
 
     if (!currentQuiz) {
 
-      $("#answer").textContent =
-        "Primeiro clique em “Novo toque”.";
+      if ($("#answer")) {
+
+        $("#answer").textContent =
+          "Primeiro clique em “Novo toque”.";
+
+      }
 
       return;
+
     }
 
-    $("#answer").textContent =
-      currentQuiz[0];
+    if ($("#answer")) {
+
+      $("#answer").textContent =
+        currentQuiz[0];
+
+    }
 
     if (!quizAnswered) {
 
@@ -267,6 +320,7 @@ if (answerButton) {
       quizAnswered = true;
 
       updateStats();
+
     }
 
   };
@@ -278,7 +332,8 @@ if (answerButton) {
 // MOSTRAR RESPOSTA AUTOMATICAMENTE
 // ==============================
 
-const revealToggle = $("#revealToggle");
+const revealToggle =
+  $("#revealToggle");
 
 if (revealToggle) {
 
@@ -289,8 +344,12 @@ if (revealToggle) {
       currentQuiz
     ) {
 
-      $("#answer").textContent =
-        currentQuiz[0];
+      if ($("#answer")) {
+
+        $("#answer").textContent =
+          currentQuiz[0];
+
+      }
 
     }
 
@@ -303,12 +362,15 @@ if (revealToggle) {
 // BOTÃO PARAR
 // ==============================
 
-const stopButton = $("#stopAll");
+const stopButton =
+  $("#stopAll");
 
 if (stopButton) {
 
   stopButton.onclick = () => {
+
     stopAudio();
+
   };
 
 }
@@ -318,18 +380,26 @@ if (stopButton) {
 // TEMA ESCURO
 // ==============================
 
-const themeButton = $("#themeBtn");
+const themeButton =
+  $("#themeBtn");
 
 if (themeButton) {
 
   themeButton.onclick = () => {
 
-    document.body.classList.toggle("dark");
+    document.body.classList.toggle(
+      "dark"
+    );
 
     const dark =
-      document.body.classList.contains("dark");
+      document.body.classList.contains(
+        "dark"
+      );
 
-    localStorage.setItem("dark", dark);
+    localStorage.setItem(
+      "dark",
+      dark
+    );
 
     themeButton.textContent =
       dark ? "☀" : "☾";
@@ -350,7 +420,9 @@ if (
   document.body.classList.add("dark");
 
   if (themeButton) {
+
     themeButton.textContent = "☀";
+
   }
 
 }
@@ -360,13 +432,16 @@ if (
 // LISTA DE ARQUIVOS
 // ==============================
 
-const fileNames = $("#fileNames");
+const fileNames =
+  $("#fileNames");
 
 if (fileNames) {
 
   fileNames.innerHTML =
     calls
-      .map(c => `<span>${c[1]}</span>`)
+      .map(c =>
+        `<span>${c[1]}</span>`
+      )
       .join("");
 
 }
@@ -377,56 +452,113 @@ if (fileNames) {
 // ==============================
 
 render();
+
 updateStats();
 
 
 // ==============================
-// INSTALAÇÃO DO APLICATIVO (PWA)
+// INSTALAÇÃO DO APLICATIVO - PWA
 // ==============================
 
 let deferredInstallPrompt = null;
-const installButton = $("#installBtn");
 
-window.addEventListener("beforeinstallprompt", event => {
-  event.preventDefault();
-  deferredInstallPrompt = event;
+const installButton =
+  $("#installBtn");
 
-  if (installButton) {
-    installButton.hidden = false;
+window.addEventListener(
+  "beforeinstallprompt",
+  event => {
+
+    event.preventDefault();
+
+    deferredInstallPrompt = event;
+
+    if (installButton) {
+
+      installButton.hidden = false;
+
+    }
+
   }
-});
+);
+
 
 if (installButton) {
-  installButton.onclick = async () => {
-    if (!deferredInstallPrompt) return;
 
-    deferredInstallPrompt.prompt();
+  installButton.onclick =
+    async () => {
 
-    const result = await deferredInstallPrompt.userChoice;
-    console.log("Resultado da instalação:", result.outcome);
+      if (!deferredInstallPrompt)
+        return;
 
-    deferredInstallPrompt = null;
-    installButton.hidden = true;
-  };
+      deferredInstallPrompt.prompt();
+
+      const result =
+        await deferredInstallPrompt.userChoice;
+
+      console.log(
+        "Resultado da instalação:",
+        result.outcome
+      );
+
+      deferredInstallPrompt = null;
+
+      installButton.hidden = true;
+
+    };
+
 }
 
-window.addEventListener("appinstalled", () => {
-  console.log("Aplicativo instalado.");
 
-  if (installButton) {
-    installButton.hidden = true;
+window.addEventListener(
+  "appinstalled",
+  () => {
+
+    console.log(
+      "Aplicativo instalado."
+    );
+
+    if (installButton) {
+
+      installButton.hidden = true;
+
+    }
+
   }
-});
+);
+
 
 // ==============================
 // SERVICE WORKER / PWA
 // ==============================
 
 if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("./service-worker.js")
-      .then(() => console.log("Service Worker registrado com sucesso."))
-      .catch(error => console.error("Erro ao registrar o Service Worker:", error));
-  });
+
+  window.addEventListener(
+    "load",
+    () => {
+
+      navigator.serviceWorker
+        .register(
+          "./service-worker.js"
+        )
+        .then(() => {
+
+          console.log(
+            "Service Worker registrado com sucesso."
+          );
+
+        })
+        .catch(error => {
+
+          console.error(
+            "Erro ao registrar o Service Worker:",
+            error
+          );
+
+        });
+
+    }
+  );
+
 }
