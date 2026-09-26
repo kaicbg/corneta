@@ -20,21 +20,30 @@
     <div class="brand-mark">🎺</div>
     <div><strong>CORNETA</strong><span>Treinamento</span></div>
   </div>
+
+  <div class="top-title">
+    <span></span> ASP 29 - OS MELHORES <span></span>
+  </div>
+
   <button id="themeBtn" class="icon-btn" aria-label="Alternar tema">☾</button>
 </header>
 
 <main>
   <section class="hero">
     <div class="hero-copy">
-      <span class="eyebrow">CFO CBMPB</span>
+      <span class="eyebrow">CFO CBMPB • ASP 29</span>
       <h1>Treine os <em>toques</em> de corneta.</h1>
-      <p>Escolha um toque, ou deixe o sistema sortear para simular a prova.</p>
+      <p>Use o simulado para testar seu reconhecimento pelo áudio.</p>
+
       <div class="hero-actions">
-        <button id="randomHero" class="primary">▶ Treino aleatório</button>
-        <button id="stopAll" class="secondary">■ Parar</button>
+      
         <button id="installBtn" class="secondary" hidden>📲 Instalar aplicativo</button>
       </div>
+
+      
+      
     </div>
+
     <div class="hero-card">
       <div class="cornetista-art" aria-label="Ilustração de corneteiro">
         <div class="sun"></div><div class="head"></div><div class="cap"></div>
@@ -44,10 +53,34 @@
     </div>
   </section>
 
-  <section class="stats">
-    <div><b id="played">0</b><span>toques treinados</span></div>
-    <div><b id="correct">0</b><span>acertos</span></div>
-    <div><b id="streak">0</b><span>sequência</span></div>
+  <!-- SIMULADO NO TOPO -->
+  <section class="trainer" id="simulado">
+    <div class="section-head compact">
+      <div>
+        <span class="eyebrow">🚨 Simulado ASP 29</span>
+        <h2>Modo prova</h2>
+      </div>
+      <label class="switch-row">
+        <input id="revealToggle" type="checkbox">
+        <span>Mostrar resposta</span>
+      </label>
+    </div>
+
+    <div class="quiz">
+      <div class="quiz-icon">🎺</div>
+      <div class="quiz-body">
+        <span id="quizStatus">Pronto para treinar</span>
+        <h3 id="quizTitle">Clique em “Novo toque” e tente reconhecer pelo áudio.</h3>
+        <div class="quiz-actions">
+          <button id="newQuiz" class="primary">▶ Novo toque</button>
+          <button id="repeatQuiz" class="secondary">🔁 Repetir toque</button>
+          <button id="answerBtn" class="secondary">Mostrar resposta</button>
+        </div>
+        <div id="answer" class="answer"></div>
+      </div>
+    </div>
+
+    <div class="easter-egg" aria-hidden="true">ASP29 • ASP29 • ASP29</div>
   </section>
 
   <section class="section-head">
@@ -60,29 +93,20 @@
 
   <section id="calls" class="call-grid"></section>
 
-  <section class="trainer">
-    <div class="section-head compact">
-      <div><span class="eyebrow">Simulado</span><h2>Modo prova</h2></div>
-      <label class="switch-row"><input id="revealToggle" type="checkbox"><span>Mostrar resposta</span></label>
+  <section class="training-note">
+    <div>🧯</div>
+    <div>
+      <strong>TURMA ASP 29</strong>
+      <p>A Maior, A Melhor, A Pioneira!</p>
     </div>
-    <div class="quiz">
-      <div class="quiz-icon">🎺</div>
-      <div class="quiz-body">
-        <span id="quizStatus">Pronto para treinar</span>
-        <h3 id="quizTitle">Clique em “Novo toque” e tente reconhecer pelo áudio.</h3>
-        <div class="quiz-actions">
-          <button id="newQuiz" class="primary">▶ Novo toque</button>
-          <button id="answerBtn" class="secondary">Mostrar resposta</button>
-        </div>
-        <div id="answer" class="answer"></div>
-      </div>
-    </div>
+    <span>🚒</span>
   </section>
-
-
 </main>
 
-<footer>TURMA ASPIRANTES 2029 -OS MELHORES- CFO CBMPB</footer>
+<footer>
+  <span></span> TURMA ASPIRANTES 2029 - OS MELHORES - CFO CBMPB <span></span>
+</footer>
+
 <script src="js/script.js"></script>
 </body>
 </html>

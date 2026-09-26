@@ -2,11 +2,12 @@
 html{scroll-behavior:smooth}
 body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#f5f2ee;color:#211f1e;line-height:1.5}
 
-.topbar{height:72px;background:#8d1111;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc((100% - 1180px)/2));position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #0002}
-.brand{display:flex;align-items:center;gap:11px}
+.topbar{height:72px;background:#8d1111;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 max(16px,calc((100% - 1180px)/2));position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #0002}
+.brand{display:flex;align-items:center;gap:11px;min-width:190px}
 .brand-mark{width:42px;height:42px;border-radius:14px;background:#fff2;display:grid;place-items:center;font-size:23px}
 .brand strong{display:block;letter-spacing:1.8px}
 .brand span{font-size:12px;opacity:.72}
+.top-title{position:absolute;left:50%;transform:translateX(-50%);font-size:15px;font-weight:900;letter-spacing:1.8px;white-space:nowrap;text-shadow:0 2px 8px #0005}
 .icon-btn{border:0;background:#fff1;color:#fff;width:42px;height:42px;border-radius:50%;font-size:19px;cursor:pointer}
 
 .hero{max-width:1180px;margin:0 auto;padding:72px 22px 54px;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}
@@ -21,6 +22,9 @@ button{font:inherit;font-weight:750;cursor:pointer}
 .primary{background:#8d1111;color:#fff}
 .secondary{background:transparent;border-color:#cfc6bf;color:#382f2b}
 
+.firefighter-strip{display:flex;align-items:center;gap:13px;margin-top:24px;color:#8d1111;font-size:20px}
+.firefighter-strip b{font-size:12px;letter-spacing:2px;border:1px solid #d8c8bf;border-radius:999px;padding:7px 11px;background:#fff}
+
 .hero-card{height:370px;border-radius:32px;background:linear-gradient(145deg,#201d1b,#4c2420);overflow:hidden;position:relative;box-shadow:0 20px 50px #31100f28}
 .hero-caption{position:absolute;bottom:0;left:0;right:0;padding:17px 20px;background:#0008;color:#fff;font-weight:700}
 .cornetista-art{position:absolute;inset:0;overflow:hidden;background:radial-gradient(circle at 70% 20%,#b54b2c55,transparent 35%)}
@@ -32,247 +36,112 @@ button{font:inherit;font-weight:750;cursor:pointer}
 .horn{position:absolute;width:180px;height:25px;background:#d7a343;right:15px;top:172px;transform:rotate(-9deg);border-radius:20px}
 .horn:after{content:"";position:absolute;right:-18px;top:-15px;width:54px;height:54px;border:13px solid #d7a343;border-left:0;border-radius:50%}
 
-.stats{max-width:1180px;margin:0 auto;padding:0 22px 58px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.stats div{background:#fff;border:1px solid #e8e0da;border-radius:20px;padding:18px 20px}
-.stats b{display:block;font-size:28px;color:#8d1111}
-.stats span{font-size:12px;color:#756c67}
-
-.section-head{max-width:1180px;margin:0 auto;padding:25px 22px;display:flex;align-items:end;justify-content:space-between;gap:20px}
-.section-head h2,.tips h2,.audio-help h2{font-size:31px;margin:4px 0}
-.section-head input{width:250px;border:1px solid #d7cec7;background:#fff;border-radius:999px;padding:12px 16px;outline:none}
-
-
-/* ==================================================
-   TOQUES
-   Cards menores no desktop.
-   A responsividade original foi mantida.
-   ================================================== */
-
-.call-grid{
-  max-width:1180px;
-  margin:0 auto;
-  padding:0 22px 70px;
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:12px;
-}
-
-.call-card{
-  border:0;
-  padding:0;
-  background:#fff;
-  border-radius:18px;
-  overflow:hidden;
-  text-align:left;
-  box-shadow:0 8px 24px #3217110c;
-  border:1px solid #ebe3de;
-  transition:.18s;
-  cursor:pointer;
-  min-width:0;
-}
-
-.call-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 14px 30px #32171118;
-}
-
-.thumb{
-  height:110px;
-  background:#2b2220;
-  position:relative;
-  overflow:hidden;
-}
-
-.thumb video,.thumb img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-.thumb-fallback{
-  height:100%;
-  display:grid;
-  place-items:center;
-  font-size:42px;
-  background:linear-gradient(135deg,#451b19,#9b2724);
-}
-
-.play{
-  position:absolute;
-  left:10px;
-  bottom:9px;
-  width:36px;
-  height:36px;
-  border-radius:50%;
-  background:#fff;
-  color:#8d1111;
-  display:grid;
-  place-items:center;
-  box-shadow:0 3px 10px #0003;
-}
-
-.call-info{
-  padding:11px 12px 13px;
-}
-
-.call-info h3{
-  margin:0 0 3px;
-  font-size:15px;
-  line-height:1.25;
-}
-
-.call-info p{
-  margin:0;
-  color:#817873;
-  font-size:11px;
-  line-height:1.3;
-}
-
-
-/* ==================================================
-   RESTANTE DO SITE
-   ================================================== */
-
-.trainer{background:#211d1b;color:#fff;padding:56px 0 70px}
-.trainer .section-head{padding-top:0}
+/* SIMULADO */
+.trainer{background:#211d1b;color:#fff;padding:48px 0 46px;position:relative;overflow:hidden}
+.trainer:before,.trainer:after{content:"";position:absolute;font-size:78px;opacity:.055;pointer-events:none}
+.trainer:before{content:"🧯";left:3%;top:12px;transform:rotate(-12deg)}
+.trainer:after{content:"🚒";right:4%;bottom:4px;transform:rotate(8deg)}
+.trainer .section-head{padding-top:0;position:relative;z-index:1}
 .trainer .eyebrow{color:#e2a04e}
-
-.quiz{max-width:1136px;margin:0 auto;padding:30px 22px;display:flex;gap:25px;align-items:center}
-.quiz-icon{width:100px;height:100px;border-radius:28px;background:#8d1111;display:grid;place-items:center;font-size:44px;flex:0 0 auto}
-.quiz-status{font-size:12px;color:#d4aaa3}
+.quiz{max-width:1136px;margin:0 auto;padding:24px 22px;display:flex;gap:25px;align-items:center;position:relative;z-index:1}
+.quiz-icon{width:100px;height:100px;border-radius:28px;background:#8d1111;display:grid;place-items:center;font-size:44px;flex:0 0 auto;box-shadow:0 10px 28px #0004}
+#quizStatus{font-size:12px;color:#d4aaa3}
 .quiz h3{font-size:24px;margin:4px 0}
 .trainer .secondary{color:#fff;border-color:#665b56}
 .answer{margin-top:15px;color:#e2a04e;font-weight:800;min-height:24px}
 .switch-row{font-size:13px;color:#cfc5bf;display:flex;gap:8px;align-items:center}
+.easter-egg{text-align:center;color:#fff;opacity:.16;font-size:10px;letter-spacing:5px;font-weight:900;position:relative;z-index:1}
 
-.tips{max-width:1180px;margin:0 auto;padding:70px 22px}
-.tips-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:22px}
-.tips article{background:#fff;border:1px solid #e8e0da;border-radius:22px;padding:23px}
-.tips article>b{color:#a21919}
-.tips h3{margin:10px 0 4px}
-.tips p{color:#716965;font-size:14px}
+.section-head{max-width:1180px;margin:0 auto;padding:25px 22px;display:flex;align-items:end;justify-content:space-between;gap:20px}
+.section-head h2{font-size:31px;margin:4px 0}
+.section-head input{width:250px;border:1px solid #d7cec7;background:#fff;border-radius:999px;padding:12px 16px;outline:none}
 
-.audio-help{max-width:1180px;margin:0 auto;padding:10px 22px 70px}
-.audio-help p{color:#716965}
-.audio-help code{background:#e9e2dd;border-radius:6px;padding:2px 5px}
+.call-grid{max-width:1180px;margin:0 auto;padding:0 22px 60px;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.call-card{border:0;padding:0;background:#fff;border-radius:18px;overflow:hidden;text-align:left;box-shadow:0 8px 24px #3217110c;border:1px solid #ebe3de;transition:.18s;cursor:pointer;min-width:0}
+.call-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #32171118}
+.thumb{height:100px;background:#2b2220;position:relative;overflow:hidden}
+.thumb video,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.play{position:absolute;left:8px;bottom:7px;width:32px;height:32px;border-radius:50%;background:#fff;color:#8d1111;display:grid;place-items:center;box-shadow:0 3px 10px #0003;font-size:13px}
+.call-info{padding:10px 11px 11px}
+.call-info h3{margin:0 0 3px;font-size:14px;line-height:1.2;color:#211f1e}
+.call-info p{margin:0;color:#817873;font-size:10px;line-height:1.2}
 
-.file-list{display:flex;flex-wrap:wrap;gap:8px}
-.file-list span{background:#fff;border:1px solid #ddd3cc;border-radius:999px;padding:8px 12px;font-size:12px}
+.training-note{max-width:1136px;margin:0 auto 55px;padding:17px 22px;border:1px solid #e2d7d0;background:#fff;border-radius:20px;display:flex;align-items:center;gap:14px;box-shadow:0 8px 24px #3217110c}
+.training-note>div:first-child{font-size:27px}
+.training-note strong{font-size:11px;letter-spacing:2px;color:#8d1111}
+.training-note p{margin:2px 0 0;color:#756c67;font-size:13px}
+.training-note>span{margin-left:auto;font-size:22px}
 
 footer{text-align:center;padding:28px;color:#8b817c;font-size:12px;border-top:1px solid #e7dfd9}
 
-
-/* ==================================================
-   RESPONSIVIDADE ORIGINAL
-   ================================================== */
-
+/* RESPONSIVIDADE */
 @media(max-width:850px){
-
-  .hero{
-    grid-template-columns:1fr;
-    padding-top:45px
-  }
-
-  .hero-card{
-    height:290px
-  }
-
-  .call-grid{
-    grid-template-columns:repeat(2,1fr)
-  }
-
-  .tips-grid{
-    grid-template-columns:1fr
-  }
-
-  .stats{
-    grid-template-columns:1fr 1fr 1fr
-  }
-
-  .section-head{
-    align-items:start;
-    flex-direction:column
-  }
-
-  .section-head input{
-    width:100%
-  }
+  .top-title{font-size:12px;letter-spacing:1px}
+  .brand{min-width:150px}
+  .hero{grid-template-columns:1fr;padding-top:45px}
+  .hero-card{height:290px}
+  .call-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding-left:12px;padding-right:12px}
+  .thumb{height:82px}
+  .call-info{padding:8px 9px 9px}
+  .call-info h3{font-size:12px}
+  .call-info p{font-size:9px}
+  .tips-grid{grid-template-columns:1fr}
+  .section-head{align-items:start;flex-direction:column}
+  .section-head input{width:100%}
 }
-
 
 @media(max-width:520px){
+  .topbar{height:62px;padding:0 10px}
+  .brand{min-width:auto;gap:6px}
+  .brand-mark{width:34px;height:34px;border-radius:10px;font-size:18px}
+  .brand strong{font-size:12px}
+  .brand span{display:none}
+  .top-title{font-size:10px;letter-spacing:.6px}
+  .icon-btn{width:36px;height:36px;font-size:17px}
 
-  .call-grid{
-    grid-template-columns:1fr
-  }
+  .hero{padding:34px 14px 34px}
+  .hero h1{letter-spacing:-2px}
+  .hero p{font-size:16px}
+  .hero-actions{margin-top:18px}
+  .primary,.secondary{padding:11px 15px;font-size:14px}
+  .hero-card{height:230px;border-radius:24px}
+  .firefighter-strip{gap:8px;margin-top:18px;font-size:16px}
+  .firefighter-strip b{font-size:10px;padding:6px 9px}
 
-  .hero h1{
-    letter-spacing:-2px
-  }
+  .trainer{padding:34px 0 34px}
+  .trainer .section-head{padding-left:14px;padding-right:14px}
+  .quiz{padding:18px 14px;gap:14px}
+  .quiz{align-items:flex-start;flex-direction:row}
+  .quiz-icon{width:64px;height:64px;border-radius:19px;font-size:28px}
+  .quiz h3{font-size:18px}
+  .quiz-actions{margin-top:16px}
+  .switch-row{font-size:11px}
 
-  .stats{
-    gap:8px
-  }
+  .section-head{padding:20px 14px}
+  .section-head h2{font-size:27px}
 
-  .stats div{
-    padding:14px
-  }
+  /* Dois toques lado a lado no celular. A altura diminui, não a largura. */
+  .call-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:0 10px 42px}
+  .thumb{height:68px}
+  .play{width:28px;height:28px;left:6px;bottom:5px;font-size:11px}
+  .call-info{padding:7px 8px 8px}
+  .call-info h3{font-size:11px;line-height:1.15;margin-bottom:2px}
+  .call-info p{font-size:8px;line-height:1.15}
 
-  .stats b{
-    font-size:22px
-  }
-
-  .quiz{
-    align-items:flex-start;
-    flex-direction:column
-  }
-
-  .quiz-icon{
-    width:75px;
-    height:75px;
-    font-size:32px
-  }
+  .training-note{margin:0 10px 40px;padding:13px 14px}
+  .training-note p{font-size:11px}
+  footer{padding:24px 12px}
 }
 
-
-/* ==================================================
-   MODO ESCURO
-   ================================================== */
-
-.dark{
-  background:#171514;
-  color:#eee
-}
-
-.dark .stats div,
-.dark .call-card,
-.dark .tips article,
-.dark .section-head input,
-.dark .file-list span{
-  background:#211e1c;
-  border-color:#39322e
-}
-
-.dark .hero p,
-.dark .tips p,
-.dark .audio-help p{
-  color:#b9afaa
-}
-
-.dark .secondary{
-  border-color:#4b433f;
-  color:#eee
-}
-
-.dark footer{
-  border-color:#332d2a
-}
-
-.dark .audio-help code{
-  background:#312b28
-}
-
-.dark .section-head input{
-  color:#eee
-}
+/* MODO ESCURO */
+.dark{background:#171514;color:#eee}
+.dark .hero p{color:#b9afaa}
+.dark .secondary{border-color:#4b433f;color:#eee}
+.dark .section-head input{background:#211e1c;border-color:#39322e;color:#eee}
+.dark .call-card{background:#211e1c;border-color:#39322e}
+.dark .call-info h3{color:#fff}
+.dark .call-info p{color:#b9afaa}
+.dark .firefighter-strip b{background:#211e1c;border-color:#4b433f;color:#f0e9e5}
+.dark .training-note{background:#211e1c;border-color:#39322e}
+.dark .training-note p{color:#b9afaa}
+.dark footer{border-color:#332d2a}
